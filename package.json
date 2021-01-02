@@ -1,0 +1,51 @@
+{
+  "name": "directory-api",
+  "version": "0.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "dev:env": "nodemon -r dotenv/config ./src/index.js",
+    "start": "node ./src/index.js",
+    "deploy": "eb deploy datadvise-api-production --profile postajob",
+    "script:es": "node scripts/es.js",
+    "script:update": "node scripts/update.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goffle/directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goffle/directory/issues"
+  },
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "homepage": "https://github.com/goffle/directory#readme",
+  "dependencies": {
+    "@sentry/node": "^5.5.0",
+    "aws-sdk": "^2.493.0",
+    "brain.js": "^2.0.0-beta.2",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "elasticsearch": "^16.7.2",
+    "express": "^4.17.1",
+    "image-size": "^0.7.4",
+    "lodash.clonedeep": "^4.5.0",
+    "mongoose": "^5.6.4",
+    "mysql": "^2.18.1",
+    "natural": "^2.4.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "url": "^0.11.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {}
+}
